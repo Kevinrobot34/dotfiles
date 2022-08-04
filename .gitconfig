@@ -1,0 +1,3 @@
+[include]
+    path = .gitconfig.d/user.gitconfig 
+    path = .gitconfig.d/shared.gitconfig

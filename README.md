@@ -1,5 +1,15 @@
 # dotfiles
 
+## zsh
+
+## vim
+
+## git
+
+以下のコマンドで設定を確認できる
+```bash
+$ git config -l
+```
 
 ## References
 
