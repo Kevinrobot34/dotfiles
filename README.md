@@ -1,14 +1,23 @@
 # dotfiles
 
-## zsh
+## target
 
-## vim
+### zsh
 
-## git
+### vim
+
+### git
 
 以下のコマンドで設定を確認できる
 ```bash
 $ git config -l
+```
+
+## Usage
+
+以下のコマンドで適宜シンボリックリンクを貼れる
+```bash
+$ make dotfiles
 ```
 
 ## References
