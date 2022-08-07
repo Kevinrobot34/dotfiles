@@ -46,10 +46,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # settings for pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
 
 # settings for pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
@@ -95,13 +93,11 @@ precmd () {
 
 
 # settings for PROMPT
-#PROMPT='
-#[%B%F{red}%n@%m%f%b:%F{yellow}%~%f] %F{cyan}$(__git_ps1 "(%s)")%f %F{cyan}($PYTHON_VERSION_STRING)%f %F{green}(NC__ENV:$NC__ENV)%f %F{green}(ALTDB_USER_NAME:$ALTDB_USER_NAME)%f 
-#%# '
 PROMPT='
 [%B%F{red}%n@%m%f%b:%F{yellow}%~%f] %F{cyan}$(__git_ps1 "(%s)")%f %F{green}($PYTHON_VERSION_STRING)%f
 %# '
 # RPROMPT='%F{cyan}($PYTHON_VERSION_STRING)%f'
+RPROMPT='%{$fg[green]%} %D{%Y/%m/%d} %*%{$reset_color%}'
 
 # For Docker
 export DOCKER_BUILDKIT=1
