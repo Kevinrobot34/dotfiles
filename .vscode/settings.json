@@ -1,0 +1,152 @@
+{
+    "git.ignoreLegacyWarning": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // ################################################################################
+    // # [workbench]
+    // ################################################################################
+    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Iceberg",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    // ################################################################################
+    // # [editor]
+    // ################################################################################
+    "editor.suggestSelection": "first",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
+    // "editor.semanticTokenColorCustomizations": null,
+    // ################################################################################
+    // # [jupyter]
+    // ################################################################################
+    "interactiveWindow.alwaysScrollOnNewCell": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    // ################################################################################
+    // # [python]
+    // ################################################################################
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "yapf",
+    "python.analysis.completeFunctionParens": true,
+    // "python.autoComplete.addBrackets": true,
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": false,
+        "editor.wordBasedSuggestions": false
+    },
+    // ################################################################################
+    // # [terraform]
+    // ################################################################################
+    "[terraform]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true
+    },
+    // ################################################################################
+    // # [typescript]
+    // ################################################################################
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true
+    },
+    //// inlay hints ////
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "files.exclude": {
+        // ファイルブラウザから除外する
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/node_modules": true,
+        // "**/dist": true
+    },
+    "search.exclude": {
+        // ファイルブラウザには表示するが、検索から除外する
+        "**/node_modules": true,
+        "**/dist": true
+    },
+    // ################################################################################
+    // # [others]
+    // ################################################################################
+    "redhat.telemetry.enabled": false,
+    "markdownlint.run": "onSave",
+    "files.associations": {
+        "*.sage": "python",
+    },
+    "cSpell.userWords": [
+        "awswrangler",
+        "boto",
+        "numpy",
+        "pypika",
+        "psycopg",
+        "pandas",
+        "mysqlconnector",
+        "dtypes",
+        "groupby",
+        "astype",
+        "isin",
+        "iloc",
+        "tolist",
+        "dropna",
+        "fillna",
+        "inplace",
+        "reindex",
+        "dotenv",
+        "strtobool",
+        "isna",
+        "asfreq",
+        "pytest",
+        "dtype",
+        "ipython",
+        "curr",
+        "nunique",
+        "fargs",
+        "itertools",
+        "xunit",
+        "jaconv",
+        "mojimoji",
+        "dateutil",
+        "gettz",
+        "nums",
+        "mecab",
+        "yapf",
+        "venv",
+        "pyenv",
+        "virtualenv",
+        "jobdef",
+        "vcpus",
+        "ipadic",
+        "neologd",
+        "nestjs",
+        "ipynb",
+        "hashicorp",
+        "mypy",
+        "vsicons",
+        "vsintellicode",
+        "Pylance",
+        "classpath",
+        "factorypath",
+        "usecase",
+        "inversify",
+        "pino",
+    ],
+    "window.zoomLevel": 1,
+}
