@@ -27,4 +27,4 @@ code/extension/list:
 	@cat vscode-extensions.txt
 
 code/extension/install:
-	@cat vscode-extensions.list | xargs -L 1 code --install-extension
+	@cat vscode-extensions.txt | xargs -L 1 code --install-extension
