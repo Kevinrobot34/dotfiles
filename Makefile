@@ -21,3 +21,10 @@ dotfiles/list: ## list the dotfiles.
 # 		echo $$file $$f; \
 # 		cp $(HOME)/$$f $(BACKUPDIR)/$$f
 # 	done;
+
+code/extension/list:
+	@code --list-extensions > vscode-extensions.txt
+	@cat vscode-extensions.txt
+
+code/extension/install:
+	@cat vscode-extensions.list | xargs -L 1 code --install-extension
