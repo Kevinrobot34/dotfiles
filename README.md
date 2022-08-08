@@ -8,10 +8,14 @@
 
 ### git
 
-以下のコマンドで設定を確認できる
-```bash
-$ git config -l
-```
+* 以下のコマンドで設定を確認できる
+  ```bash
+  $ git config -l
+  ```
+* ignore関係
+  * globalなignoreな設定は `~/.config/git/ignore` がデフォルト値となっている
+    * 参考：[Zenn - ~/.gitignore_global を指定するのをやめ、デフォルトの置き場に置こう]( https://zenn.dev/qnighy/articles/1a756f2857dc20 )
+  * ignoreの設定自体は https://github.com/github/gitignore が参考になる
 
 ### vscode
 
