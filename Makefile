@@ -1,5 +1,5 @@
 BACKUPDIR       := $(HOME)/backups/
-TARGET_DOTFILES := $(shell find $(CURDIR) -name ".*" -not -name ".gitignore" -not -name ".git" -not -name ".config" -not -name ".github" -not -name ".*.swp" -not -name ".gnupg")
+TARGET_DOTFILES := $(shell find $(CURDIR) -name ".*" -not -name ".gitignore" -not -name ".git" -not -name ".config" -not -name ".github" -not -name ".*.swp" -not -name ".gnupg" -not -name ".vscode")
 
 dotfiles/install: ## Installs the dotfiles.
 	@for file in $(TARGET_DOTFILES); do \
@@ -20,6 +20,9 @@ dotfiles/list: ## list the dotfiles.
 # 		echo $$file $$f; \
 # 		cp $(HOME)/$$f $(BACKUPDIR)/$$f
 # 	done;
+
+code/usersettings/install:
+	@ln -sfn $(CURDIR)/.vscode/settings.json $(HOME)/Library/Application\ Support/Code/User/settings.json
 
 code/extension/list:
 	@code --list-extensions > vscode-extensions.txt

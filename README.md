@@ -20,6 +20,8 @@
 ### vscode
 
 * `.vscode/settings.json` に標準的な設定項目が記載されてる
+  * こいつをユーザー設定とするには `make code/usersettings/install` をやる
+  * https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations
 * `vscode-extensions.txt` によく使っているextensionが入っている
 
 ## Usage
