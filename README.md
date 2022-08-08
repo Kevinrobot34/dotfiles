@@ -13,12 +13,21 @@
 $ git config -l
 ```
 
+### vscode
+
+* `.vscode/settings.json` に標準的な設定項目が記載されてる
+* `vscode-extensions.txt` によく使っているextensionが入っている
+
 ## Usage
 
-以下のコマンドで適宜シンボリックリンクを貼れる
-```bash
-$ make dotfiles
-```
+* 以下のコマンドで適宜シンボリックリンクを貼れる
+  ```bash
+  $ make dotfiles/install
+  ```
+* vscodeのextensionは以下のコマンドでinstallできる
+  ```bash
+  $ make code/extension/install
+  ```
 
 ## References
 
