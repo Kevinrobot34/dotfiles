@@ -65,7 +65,6 @@ eval "$(direnv hook zsh)"
 
 # for poetry
 export PATH="$HOME/.poetry/bin:$PATH"
-poetry completions zsh > ~/.zfunc/_poetry
 
 
 
