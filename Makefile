@@ -8,7 +8,6 @@ dotfiles/install: ## Installs the dotfiles.
 		ln -sfn $$file $(HOME)/$$f; \
 	done;
 	@ln -sfn $(CURDIR)/.config/git/ignore $(HOME)/.config/git/ignore
-	@exec $SHELL -l
 
 dotfiles/list: ## list the dotfiles.
 	@for file in $(TARGET_DOTFILES); do \

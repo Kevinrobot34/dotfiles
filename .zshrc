@@ -91,12 +91,13 @@ precmd () {
   #if [ -n "$VIRTUAL_ENV" ]; then
   #  PYTHON_VIRTUAL_ENV_STRING=":`basename \"$VIRTUAL_ENV\"`"
   #fi
+  ARCH_NAME=$(uname -m)
 }
 
 
 # settings for PROMPT
 PROMPT='
-[%B%F{red}%n@%m%f%b:%F{yellow}%~%f] %F{cyan}$(__git_ps1 "(%s)")%f %F{green}($PYTHON_VERSION_STRING)%f
+[%B%F{red}%n@%m%f%b($ARCH_NAME):%F{yellow}%~%f] %F{cyan}$(__git_ps1 "(%s)")%f %F{green}($PYTHON_VERSION_STRING)%f
 %# '
 # RPROMPT='%F{cyan}($PYTHON_VERSION_STRING)%f'
 RPROMPT='%{$fg[green]%} %D{%Y/%m/%d} %*%{$reset_color%}'
