@@ -13,12 +13,17 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-# for docker completions
-# https://docs.docker.com/desktop/mac/#install-shell-completion
-# https://docs.docker.com/compose/completion/
-fpath=(~/.zsh/completion $fpath)
-autoload -Uz compinit && compinit -i
-
+# manual completion settings
+# - docker & docker-compose
+#   - `ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ~/.zsh/completion/_docker`
+#   - `ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose`
+# - poetry
+#   - `poetry completions zsh > ~/.zsh/completion/_poetry`
+#   - https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh
+if [ -e ~/.zsh/completion ]; then
+  fpath=(~/.zsh/completion $fpath)
+  autoload -Uz compinit && compinit -i
+fi
 
 ### 補完侯補をメニューから選択する。
 ### select=2: 補完候補を一覧から選択する。補完候補が2つ以上なければすぐに補完する。
@@ -65,7 +70,6 @@ eval "$(direnv hook zsh)"
 
 # for poetry
 export PATH="$HOME/.poetry/bin:$PATH"
-
 
 
 # settings for go-lang
