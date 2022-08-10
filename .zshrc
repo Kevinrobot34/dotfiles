@@ -4,8 +4,7 @@ fpath=(~/.zsh $fpath)
 autoload -Uz colors
 colors
 
-# for zsh-completions insalled with brew
-fpath+=~/.zfunc
+# for zsh-completions ( https://github.com/zsh-users/zsh-completions ) insalled with brew
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
