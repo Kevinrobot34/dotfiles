@@ -4,6 +4,10 @@ fpath=(~/.zsh $fpath)
 autoload -Uz colors
 colors
 
+################################################################################
+# completion
+################################################################################
+
 # for zsh-completions ( https://github.com/zsh-users/zsh-completions ) insalled with brew
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -46,7 +50,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # ヒストリに追加されるコマンドが古いものと同じなら古いものを削除
 #setopt hist_ignore_all_dups
 
-
+################################################################################
+# **env settings
+################################################################################
 
 # settings for pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -66,15 +72,15 @@ eval "$(nodenv init -)"
 # https://github.com/direnv/direnv
 eval "$(direnv hook zsh)"
 
-
-# for poetry
+################################################################################
+# poetry
+################################################################################
 export PATH="$HOME/.poetry/bin:$PATH"
 
 
-# settings for go-lang
-
-
+################################################################################
 # PROMPT
+################################################################################
 # prompt : git
 setopt PROMPT_SUBST
 if [ -f ${HOME}/.zsh/git-prompt.sh ]; then
@@ -94,7 +100,6 @@ precmd () {
   ARCH_NAME=$(uname -m)
 }
 
-
 # settings for PROMPT
 PROMPT='
 [%B%F{red}%n@%m%f%b($ARCH_NAME):%F{yellow}%~%f] %F{cyan}$(__git_ps1 "(%s)")%f %F{green}($PYTHON_VERSION_STRING)%f
@@ -102,17 +107,24 @@ PROMPT='
 # RPROMPT='%F{cyan}($PYTHON_VERSION_STRING)%f'
 RPROMPT='%{$fg[green]%} %D{%Y/%m/%d} %*%{$reset_color%}'
 
-# For Docker
+################################################################################
+# Docker
+################################################################################
 export DOCKER_BUILDKIT=1
 
+################################################################################
 # alias
+################################################################################
 alias ls='ls -G' # ls with colored text
 alias ll='ls -G -l'
+alias arch-arm="exec arch -arch arm64e /bin/zsh --login"
+alias arch-x64="exec arch -arch x86_64 /bin/zsh --login"
 
+################################################################################
+# others
+################################################################################
 ZSHHOME="${HOME}/.zsh"
-
-if [ -d $ZSHHOME -a -r $ZSHHOME -a \
-     -x $ZSHHOME ]; then
+if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
     for i in $ZSHHOME/*; do
         [[ ${i##*/} = *.zsh ]] &&
             [ \( -f $i -o -h $i \) -a -r $i ] && . $i
