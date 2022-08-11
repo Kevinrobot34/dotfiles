@@ -55,7 +55,11 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 ################################################################################
 
 # settings for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
+if [ "$(uname -m)" = "arm64" ]; then
+  export PYENV_ROOT="$HOME/.pyenv_arm64"
+else
+  export PYENV_ROOT="$HOME/.pyenv"
+fi
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
