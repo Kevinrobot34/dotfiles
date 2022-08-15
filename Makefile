@@ -21,6 +21,10 @@ dotfiles/list: ## list the dotfiles.
 # 		cp $(HOME)/$$f $(BACKUPDIR)/$$f
 # 	done;
 
+dotfiles/source:
+	@tmux source $(HOME)/.tmux.conf
+	exec $$SHELL
+
 code/usersettings/install:
 	@ln -sfn $(CURDIR)/.vscode/settings.json $(HOME)/Library/Application\ Support/Code/User/settings.json
 
