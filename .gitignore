@@ -1,1 +1,5 @@
 .gitconfig.d/user.gitconfig
+
+.vscode/configurationCache.log
+.vscode/dryrun.log
+.vscode/targets.log
