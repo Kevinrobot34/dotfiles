@@ -25,6 +25,9 @@ dotfiles/source:
 	@tmux source $(HOME)/.tmux.conf
 	exec $$SHELL
 
+brew/install_and_update:
+	brew bundle
+
 brew/cleanup:
 	brew bundle cleanup
 

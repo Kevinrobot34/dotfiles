@@ -2,7 +2,7 @@
 
 ## target
 
-## brew
+### brew
 
 brewでinstallするものは `Brewfile` を用いて管理している。
 
