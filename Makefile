@@ -25,6 +25,12 @@ dotfiles/source:
 	@tmux source $(HOME)/.tmux.conf
 	exec $$SHELL
 
+brew/cleanup:
+	brew bundle cleanup
+
+brew/dump:
+	brew bundle dump
+
 code/usersettings/install:
 	@ln -sfn $(CURDIR)/.vscode/settings.json $(HOME)/Library/Application\ Support/Code/User/settings.json
 
