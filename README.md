@@ -2,6 +2,14 @@
 
 ## target
 
+## brew
+
+brewでinstallするものは `Brewfile` を用いて管理している。
+
+* https://github.com/Homebrew/homebrew-bundle
+* https://docs.brew.sh/Manpage#bundle-subcommand
+* [Brewfile で Homebrew のライブラリを管理しよう！]( https://kakakakakku.hatenablog.com/entry/2020/09/17/124653 )
+
 ### zsh
 
 ### vim
