@@ -8,7 +8,7 @@
         "revision": "73b77351709591cadc3f4a918b3276ee82cafbad"
       },
       "homebrew/core": {
-        "revision": "059c3bb9ddc403d52fbfca0a3801cf314114a40e"
+        "revision": "c1b93acdb21eb1c2413e889713984cc1c63cd337"
       }
     },
     "brew": {
@@ -558,6 +558,20 @@
       "dbt-labs/dbt/dbt-redshift": {
         "version": "1.2.1",
         "bottle": false
+      },
+      "tfenv": {
+        "version": "3.0.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/tfenv/blobs/sha256:4905c2390b0254348be44da1c4a05b3d8bf4d8704b94d16b739d64fd4709784b",
+              "sha256": "4905c2390b0254348be44da1c4a05b3d8bf4d8704b94d16b739d64fd4709784b"
+            }
+          }
+        }
       }
     }
   },
@@ -566,7 +580,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.6.3",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "059c3bb9ddc403d52fbfca0a3801cf314114a40e",
+        "Homebrew/homebrew-core": "c1b93acdb21eb1c2413e889713984cc1c63cd337",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0",
         "macOS": "12.5.1"
