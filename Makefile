@@ -43,3 +43,6 @@ code/extension/list:
 
 code/extension/install:
 	@cat vscode-extensions.txt | xargs -L 1 code --install-extension
+
+git/secretes/install:
+	git secrets --install
