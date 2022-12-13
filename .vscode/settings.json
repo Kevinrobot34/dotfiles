@@ -38,6 +38,7 @@
     "python.linting.mypyEnabled": true,
     "python.formatting.provider": "yapf",
     "python.analysis.completeFunctionParens": true,
+    "python.terminal.activateEnvironment": false,
     // "python.autoComplete.addBrackets": true,
     "[python]": {
         "editor.tabSize": 4,
