@@ -148,5 +148,4 @@
         "inversify",
         "pino",
     ],
-    "window.zoomLevel": 1,
 }
