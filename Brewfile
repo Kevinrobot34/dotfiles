@@ -19,3 +19,4 @@ brew "zlib"
 brew "zsh-completions"
 brew "dbt-labs/dbt/dbt-postgres", link: false
 brew "dbt-labs/dbt/dbt-redshift"
+brew "dbt-labs/dbt/dbt-snowflake"
