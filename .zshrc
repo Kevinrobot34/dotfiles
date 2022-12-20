@@ -136,6 +136,13 @@ alias arch-arm="exec arch -arch arm64e /bin/zsh --login"
 alias arch-x64="exec arch -arch x86_64 /bin/zsh --login"
 
 ################################################################################
+# Snowflake
+################################################################################
+# added by Snowflake SnowSQL installer v1.2: https://docs.snowflake.com/ja/user-guide/snowsql-install-config.html#installing-snowsql-on-macos-using-homebrew-cask
+export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
+alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
+
+################################################################################
 # others
 ################################################################################
 ZSHHOME="${HOME}/.zsh"
