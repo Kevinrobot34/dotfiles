@@ -80,7 +80,6 @@ eval "$(direnv hook zsh)"
 # poetry
 ################################################################################
 # https://python-poetry.org/docs/#installation
-export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 ################################################################################
