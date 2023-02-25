@@ -4,6 +4,8 @@
 	sslVerify=True
 [core]
 	editor=vim
+[push]
+	autoSetupRemote = true
 [alias]
 	st = status
 	stat = status
