@@ -21,6 +21,7 @@ brew "rust"
 brew "tcl-tk"
 brew "tfenv"
 brew "tmux"
+brew "tree"
 brew "zlib"
 brew "zsh-completions"
 brew "dbt-labs/dbt/dbt-postgres", link: false
