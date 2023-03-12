@@ -6,6 +6,8 @@
 	editor=vim
 [push]
 	autoSetupRemote = true
+[merge]
+	conflictStyle = diff3
 [alias]
 	st = status
 	stat = status
