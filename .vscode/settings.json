@@ -19,13 +19,14 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.bracketPairColorization.enabled": true,
+    "editor.inlineSuggest.enabled": true,
     // "editor.semanticTokenColorCustomizations": null,
     // ################################################################################
     // # [jupyter]
     // ################################################################################
     "interactiveWindow.alwaysScrollOnNewCell": true,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
@@ -50,6 +51,7 @@
     // ################################################################################
     // # [terraform]
     // ################################################################################
+    "terraform.experimentalFeatures.prefillRequiredFields": true,
     "[terraform]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
@@ -148,5 +150,8 @@
         "usecase",
         "inversify",
         "pino",
+        "dateutil",
+        "relativedelta",
     ],
+    "explorer.confirmDelete": false,
 }
