@@ -8,6 +8,8 @@
 	autoSetupRemote = true
 [merge]
 	conflictStyle = diff3
+[fetch]
+	prune = true
 [alias]
 	st = status
 	stat = status
