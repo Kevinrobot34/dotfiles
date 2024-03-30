@@ -14,7 +14,7 @@
     // ################################################################################
     "editor.suggestSelection": "first",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
@@ -46,7 +46,7 @@
         "editor.formatOnSave": true,
         "editor.formatOnPaste": false,
         "editor.formatOnType": false,
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     // ################################################################################
     // # [terraform]
@@ -154,4 +154,5 @@
         "relativedelta",
     ],
     "explorer.confirmDelete": false,
+    "window.zoomLevel": 1,
 }
