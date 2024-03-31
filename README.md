@@ -12,10 +12,35 @@ brewでinstallするものは `Brewfile` を用いて管理している。
 
 ### zsh
 
+```
+$ cd
+$ mkdir .zsh
+$ mkdir .zsh/completion
+# for git
+$ curl -L -O https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
+# for poetry
+$ poetry completions zsh > ~/.zsh/completion/_poetry 
+# for docker
+$ ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ~/.zsh/completion/_docker`
+$ ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose
+```
+
 ### vim
+
+vim-plug が必要。 https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation を見て以下のようなことをする
+```
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
 ### git
 
+* user.gitconfig を用意する
+  ```
+  [user]
+    name = {name}
+    email = {email}
+  ```
 * 以下のコマンドで設定を確認できる
   ```bash
   $ git config -l
@@ -27,6 +52,7 @@ brewでinstallするものは `Brewfile` を用いて管理している。
 
 ### vscode
 
+* VS Code をダウンロードしたら、コマンドパレットで "Install 'code' command" 的なのをやっておく
 * `.vscode/settings.json` に標準的な設定項目が記載されてる
   * こいつをユーザー設定とするには `make code/usersettings/install` をやる
   * https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations
