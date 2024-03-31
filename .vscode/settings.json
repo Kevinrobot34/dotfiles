@@ -36,8 +36,6 @@
     // ################################################################################
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "basic",
-    "python.linting.mypyEnabled": true,
-    "python.formatting.provider": "yapf",
     "python.analysis.completeFunctionParens": true,
     "python.terminal.activateEnvironment": false,
     // "python.autoComplete.addBrackets": true,
@@ -90,7 +88,6 @@
     // # [others]
     // ################################################################################
     "redhat.telemetry.enabled": false,
-    "markdownlint.run": "onSave",
     "files.associations": {
         "*.sage": "python",
     },
