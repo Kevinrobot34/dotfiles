@@ -7,7 +7,8 @@
     "workbench.iconTheme": "file-icons",
     "workbench.colorTheme": "Iceberg",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.ini": "default"
     },
     // ################################################################################
     // # [editor]
@@ -16,7 +17,6 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
-    "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.bracketPairColorization.enabled": true,
     "editor.inlineSuggest.enabled": true,
@@ -90,6 +90,7 @@
     "redhat.telemetry.enabled": false,
     "files.associations": {
         "*.sage": "python",
+        "*.tf": "terraform"
     },
     "cSpell.userWords": [
         "awswrangler",
@@ -149,7 +150,25 @@
         "pino",
         "dateutil",
         "relativedelta",
+        "varchar",
+        "dateadd",
+        "nowcast",
+        "datahub",
+        "sqlfluff",
+        "sqlfmt",
+        "templater",
+        "capitalisation",
+        "ctes",
+        "jinjafmt",
     ],
     "explorer.confirmDelete": false,
     "window.zoomLevel": 1,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "snowflake.connectionsConfigFile": "/Users/kevin/.snowflake/connections.toml",
+    "dbt.enableNewLineagePanel": true,
+    "dbt.lineage.defaultExpansion": 5,
+    "dbt.lineage.showNonSelectEdges": true,
+    "makefile.configureOnOpen": true,
+    "editor.formatOnSave": true,
+    "terraform.codelens.referenceCount": true,
 }
