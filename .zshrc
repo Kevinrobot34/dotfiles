@@ -142,6 +142,12 @@ export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
 alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
 
 ################################################################################
+# aqua
+################################################################################
+# https://aquaproj.github.io/docs/install/#2-set-the-environment-variable-path
+export PATH="$(aqua root-dir)/bin:$PATH"
+
+################################################################################
 # others
 ################################################################################
 ZSHHOME="${HOME}/.zsh"
