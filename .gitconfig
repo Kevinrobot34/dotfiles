@@ -3,3 +3,5 @@
     path = .gitconfig.d/shared.gitconfig
 [init]
 	templatedir = ~/.git-templates/git-secrets
+[url "git@github.com:"]
+	insteadOf = https://github.com/
